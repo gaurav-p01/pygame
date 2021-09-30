@@ -21,17 +21,17 @@ class Animation():
         self.frame_index = 0
         
         self.idle = []
-        for i in range (3):
+        for i in range (4):
             img = pygame.image.load(f"player/idle/adventurer-idle-0{str(i)}.png").convert_alpha()
             self.idle.append(pygame.transform.scale(img, (img.get_width()*5, img.get_height()*5)))
 
         self.run = []
-        for i in range (5):
+        for i in range (6):
             img = pygame.image.load(f"player/run/adventurer-run3-0{str(i)}.png").convert_alpha()
             self.run.append(pygame.transform.scale(img, (img.get_width()*5, img.get_height()*5)))
 
         self.jump = []
-        for i in range (3):
+        for i in range (4):
             img = pygame.image.load(f"player/jump/adventurer-jump-0{str(i)}-1.3.png").convert_alpha()
             self.jump.append(pygame.transform.scale(img, (img.get_width()*5, img.get_height()*5)))
 
